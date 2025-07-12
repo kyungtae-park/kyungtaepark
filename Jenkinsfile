@@ -10,6 +10,9 @@ pipeline {
             IMAGE_NAME = '053703324384.dkr.ecr.ap-northeast-2.amazonaws.com/board'
             DEPLOY_HOST="52.78.116.59"
         }
+    tools {
+        jdk 'jdk17'
+     }
     stages {
         stage('Pull Codes from Github'){
             steps{
